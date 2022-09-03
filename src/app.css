@@ -46,10 +46,10 @@ body {
 }
 
 .nombres {
-  font-size: 8px;
+  font-size: 14px;
   
-  text-align: center;
+  text-align: left;
   background-color: yellow;
-  color: blue;
+  color: black;
   vertical-align: super;
 }
