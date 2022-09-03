@@ -13,7 +13,7 @@
         {  
             if(character.name.length>21)
             {
-                return character.name.substring(0,20)+"."
+                return character.name.substring(0,20)+"*"
             }
             else{
                 return character.name;
