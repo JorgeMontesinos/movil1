@@ -14,12 +14,21 @@ body {
   max-width: 1200px;
 }
 
-.grid {
+.containerñ {
+  margin: auto;
+  max-width: 501px;
+}
+.gridñ {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
 .btns {
   display: flex;
   justify-content: space-between;
@@ -45,11 +54,20 @@ body {
   border-radius: 5px 5px 0 0;
 }
 
-.nombres {
+.nombresñ {
   font-size: 12px;
   
   text-align: left;
   background-color: rgb(179, 255, 0);
   color: red;
+  vertical-align: super;
+}
+
+.nombres {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+  background-color: yellow;
+  color: green;
   vertical-align: super;
 }

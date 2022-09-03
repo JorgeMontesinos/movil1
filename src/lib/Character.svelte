@@ -1,26 +1,33 @@
 <script>
+    import { esMovil } from '../screenAncho.js';
     export let character
-    function nombreLargo(){
-        if(character.name.length>22)
-        {
-            var ancho = screen.width;
-           
-
-            console.log(character.name.length)
-            console.log("L-->"+character.name)
-            return "-->"+ancho //character.name.substring(0,21)+"."
+    
+  
+    function nombreLargo()
+    {
+        if($esMovil)  //es movil?
+        {  
+            if(character.name.length>22)
+            {
+                return character.name.substring(0,21)+"."
+            }
+            else{
+                return character.name;
+            }
         }
         else
-        {
-            console.log(character.name.length)
-            console.log("-",character.name)
-            return character.name
-            
-        }
+            {
+               return character.name                
+            }
+  
     }
    $: nombrex=nombreLargo()
 </script>
-<div class="character">
+<div class="character" >
     <img src={character.image} alt={character.name}>
-    <span class="nombres">{nombrex}</span>
+    <span 
+        class="{ esMovil   ? 'nombreñ':'nombre'}">
+        {nombrex}        
+    </span>
+
 </div>
