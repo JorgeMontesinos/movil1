@@ -13,6 +13,8 @@
         {  
             if(character.name.length>21)
             {
+                let xx=character.name;
+                console.log(xx.legth)
                 return character.name.substring(0,20)+"*"
             }
             else{
