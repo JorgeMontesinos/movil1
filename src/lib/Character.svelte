@@ -3,9 +3,12 @@
     function nombreLargo(){
         if(character.name.length>22)
         {
+            var ancho = screen.width;
+           
+
             console.log(character.name.length)
             console.log("L-->"+character.name)
-            return character.name.substring(0,21)+"."
+            return "-->"+ancho //character.name.substring(0,21)+"."
         }
         else
         {
