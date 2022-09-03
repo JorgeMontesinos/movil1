@@ -2,10 +2,10 @@
     import { esMovil } from '../screenAncho.js';
     export let character
     
-  
+    console.log($esMovil)
     function nombreLargo()
     {
-        if($esMovil)  //es movil?
+        if(!$esMovil)  //es !movil?
         {  
             if(character.name.length>22)
             {
@@ -26,7 +26,7 @@
 <div class="character" >
     <img src={character.image} alt={character.name}>
     <span 
-        class="{ esMovil   ? 'nombreñ':'nombre'}">
+        class="{ esMovil   ? 'nombre':'nombreñ'}">
         {nombrex}        
     </span>
 
