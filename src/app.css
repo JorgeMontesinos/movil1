@@ -54,16 +54,16 @@ body {
   border-radius: 5px 5px 0 0;
 }
 
-.nombresñ {
+.nombreñ {
   font-size: 12px;
-  
+
   text-align: left;
   background-color: rgb(179, 255, 0);
   color: red;
   vertical-align: super;
 }
 
-.nombres {
+.nombre {
   font-size: 2rem;
   font-weight: bolder;
   text-align: center;
