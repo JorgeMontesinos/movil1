@@ -11,9 +11,9 @@
         }
         else
         {  
-            if(character.name.length>22)
+            if(character.name.length>21)
             {
-                return character.name.substring(0,21)+"."
+                return character.name.substring(0,20)+"."
             }
             else{
                 return character.name;
