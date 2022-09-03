@@ -46,10 +46,10 @@ body {
 }
 
 .nombres {
-  font-size: 12px;
+  font-size: 8px;
   
   text-align: left;
-  background-color: peru;
+  background-color: orangered;
   color: black;
   vertical-align: super;
 }
