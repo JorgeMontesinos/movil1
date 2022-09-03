@@ -18,17 +18,18 @@ body {
   margin: auto;
   max-width: 501px;
 }
-.gridñ {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
 
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
+.gridñ {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
 .btns {
   display: flex;
   justify-content: space-between;

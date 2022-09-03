@@ -24,14 +24,14 @@
 
    
 </script>
-<main class="{esPC ? "container":"containerñ"}">
+<main class="{$esPC ? "container":"containerñ"}">
 
-    <h1 class="title">Rick Morty</h1>
+    <h1 class="title">{$esPC}-Rick Morty</h1>
     <div class="btns">
         <button class="btn" on:click={retro} disabled={page===1}>Previo</button>
         <button class="btn" on:click={siguiente}>Siguiente</button>
     </div>
-    <div  class="{esPC ? "grid":"gridñ"}">
+    <div  class="{$esPC ? "grid":"gridñ"}">
         {#each characters as character}
         <Character character={character}/>    
         {/each}

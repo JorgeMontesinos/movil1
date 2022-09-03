@@ -26,7 +26,7 @@
 <div class="character" >
     <img src={character.image} alt={character.name}>
     <span 
-        class="{ esPC   ? 'nombre':'nombreñ'}">
+        class="{ $esPC   ? 'nombre':'nombreñ'}">
         {nombrex}        
     </span>
 
