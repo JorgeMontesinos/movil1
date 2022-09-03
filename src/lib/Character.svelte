@@ -5,20 +5,19 @@
     console.log($esPC)
     function nombreLargo()
     {
+        const nx=character.name;
         if($esPC)  
         {
-            return character.name                
+            return nx;                
         }
         else
         {  
-            if(character.name.length>21)
+            if(nx.length>21)
             {
-                let xx=character.name;
-                console.log(xx.legth)
-                return character.name.substring(0,20)+"*"
+                return nx.substring(0,20)+"*";
             }
             else{
-                return character.name;
+                return nx;
             }
         }
         

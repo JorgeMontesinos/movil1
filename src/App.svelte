@@ -33,7 +33,7 @@
     </div>
     <div  class="{$esPC ? "grid":"gridñ"}">
         {#each characters as character}
-        <Character character={character}/>    
+        <Character {character}/>    
         {/each}
     </div>
 </main>
