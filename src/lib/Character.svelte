@@ -1,11 +1,11 @@
 <script>
     export let character
     function nombreLargo(){
-        if(character.name.length>16)
+        if(character.name.length>20)
         {
             console.log(character.name.length)
             console.log("L-->"+character.name)
-            return character.name.substring(0,15)+"."
+            return character.name.substring(0,19)+"."
         }
         else
         {
