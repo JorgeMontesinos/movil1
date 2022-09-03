@@ -1,7 +1,7 @@
 <script>
 	import Character from './lib/Character.svelte';
-    import {esMovil } from './screenAncho.js';
-    console.log("------->",$esMovil)
+    import {esPC } from './screenAncho.js';
+    console.log("------->",$esPC)
     let characters=[]
     let page=1;
    function retro()
@@ -24,14 +24,14 @@
 
    
 </script>
-<main class="{esMovil ? "container":"containerñ"}">
+<main class="{esPC ? "container":"containerñ"}">
 
     <h1 class="title">Rick Morty</h1>
     <div class="btns">
         <button class="btn" on:click={retro} disabled={page===1}>Previo</button>
         <button class="btn" on:click={siguiente}>Siguiente</button>
     </div>
-    <div  class="{esMovil ? "grid":"gridñ"}">
+    <div  class="{esPC ? "grid":"gridñ"}">
         {#each characters as character}
         <Character character={character}/>    
         {/each}

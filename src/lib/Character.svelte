@@ -1,11 +1,15 @@
 <script>
-    import { esMovil } from '../screenAncho.js';
+    import { esPC } from '../screenAncho.js';
     export let character
     
-    console.log($esMovil)
+    console.log($esPC)
     function nombreLargo()
     {
-        if(!$esMovil)  //es !movil?
+        if($esPC)  
+        {
+            return character.name                
+        }
+        else
         {  
             if(character.name.length>22)
             {
@@ -15,18 +19,14 @@
                 return character.name;
             }
         }
-        else
-            {
-               return character.name                
-            }
-  
-    }
+        
+      }
    $: nombrex=nombreLargo()
 </script>
 <div class="character" >
     <img src={character.image} alt={character.name}>
     <span 
-        class="{ esMovil   ? 'nombre':'nombreñ'}">
+        class="{ esPC   ? 'nombre':'nombreñ'}">
         {nombrex}        
     </span>
 
